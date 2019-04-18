@@ -6,6 +6,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import './App.css';
+import DKGame from "./DKGame.js";
 
 class App extends Component {
   render() {
@@ -23,7 +24,7 @@ class App extends Component {
             <Route path="/game1" render={()=><h2>game 1</h2>}/>
             <Route path="/game2" render={()=><h2>game 2</h2>}/>
             <Route path="/game3" render={()=><h2>game 3</h2>}/>
-            <Route path="/game4" render={()=><h2>game 4</h2>}/>
+            <Route path="/game4" render={()=><DKGame/>}/>
           </div>
         </HashRouter>
       </div>
